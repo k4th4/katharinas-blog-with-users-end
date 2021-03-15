@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+    <form method="POST" action="{{ url_for('home') }}">
+    {{ form.csrf_token }}
+    <p>{{ form.username.label }}<br>{{ form.username(size=30)}}</p>
+    <p> {{ form.submit }}</p>
+  </form>
+</body>
+</html>
